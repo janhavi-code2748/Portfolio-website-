@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4f46e5;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.home {
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  color: white;
+  padding: 120px 20px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: white;
+  color: #4f46e5;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+}
+
+/* Cards */
+.card, .project-card {
+  background: white;
+  padding: 25px;
+  margin: 20px auto;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Project Buttons */
+.project-buttons {
+  margin-top: 15px;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .home h1 {
+    font-size: 2.2rem;
+  }
+}
